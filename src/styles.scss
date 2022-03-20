@@ -1,0 +1,21 @@
+
+@import "./mixins.scss";
+
+footer {
+  padding: 140px 40px 40px 40px;
+  
+  background-color: #1A212A;
+
+  height: 100vh;
+
+  color: #fff;
+
+  .foo {
+    padding: 0 15px;
+
+    // 576px window width and more
+    @include sm {
+        padding: 0 20px;
+    }
+  }
+}
